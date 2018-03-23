@@ -73,7 +73,7 @@ class Vocabulary(object):
     def pad_sentence(self, words, use_eos=True):
         ret = [self.START_TOKEN] + words
         if use_eos:
-          ret.append(self.END_TOKEN)
+            ret.append(self.END_TOKEN)
         return ret
 
     def sentence_to_ids(self, words, use_eos=True):
